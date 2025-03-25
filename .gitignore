@@ -1,0 +1,29 @@
+# Ігнорувати всі бінарні та тимчасові файли
+*.bin
+*.hex
+*.elf
+*.map
+*.lst
+*.o
+*.su
+*.d
+*.axf
+*.log
+
+# Ігнорувати згенеровані CubeMX файли (крім .ioc)
+Makefile
+Drivers/
+Middlewares/
+*.ld
+*.s
+*.launch
+
+# НЕ ігнорувати:
+!.gitignore
+!*.ioc            # Конфігураційний файл CubeMX
+!Src/main.c       # Основний код
+!Src/stm32f*_hal_conf.h  # Конфігурація HAL
+!Src/stm32f*_it.c  # Файл переривань
+!Src/stm32f*_it.h
+!Inc/main.h       # Головний заголовочний файл
+!Inc/stm32f*_hal_conf.h
